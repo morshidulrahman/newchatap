@@ -18,7 +18,7 @@ function Navbar() {
           </SignedIn>
           <SignedOut>
             <SignInButton>
-              <button className="capitalize text-blue-600">Login</button>
+              <button className="capitalize text-blue-600">Login button</button>
             </SignInButton>
           </SignedOut>
         </div>
