@@ -24,13 +24,7 @@ function Navbar() {
         <div>
           <SignedIn>
             <div className="flex items-center gap-4">
-              <UserButton>
-                <UserButton.MenuItems>
-                  <UserButton.Action label="signOut" />
-                  <UserButton.Link label="Dashboard" href="/dashboard" />
-                  <UserButton.Action label="manageAccount" />
-                </UserButton.MenuItems>
-              </UserButton>
+              <UserButton></UserButton>
             </div>
           </SignedIn>
           <SignedOut>
