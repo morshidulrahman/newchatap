@@ -21,7 +21,18 @@ function Navbar() {
             </li>
           </ul>
         </div>
-        <div></div>
+        <div>
+          <SignedIn>
+            <div className="flex items-center gap-4">
+              <UserButton></UserButton>
+            </div>
+          </SignedIn>
+          <SignedOut>
+            <SignInButton>
+              <button className="capitalize text-blue-600">login</button>
+            </SignInButton>
+          </SignedOut>
+        </div>
       </div>
     </div>
   );
