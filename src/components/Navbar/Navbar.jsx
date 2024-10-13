@@ -1,5 +1,4 @@
 import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/nextjs";
-import Link from "next/link";
 
 function Navbar() {
   return (
@@ -9,17 +8,7 @@ function Navbar() {
           <h1 className="text-3xl font-semibold">BabelForge</h1>
         </div>
         <div>
-          <ul className="flex gap-5">
-            <li>
-              <Link href="/">Home</Link>
-            </li>
-            <li>
-              <Link href="/dashboard">Dashboard</Link>
-            </li>
-            <li>
-              <Link href="/contact">Contact</Link>
-            </li>
-          </ul>
+          <ul className="flex gap-5"></ul>
         </div>
         <div>
           <SignedIn>
