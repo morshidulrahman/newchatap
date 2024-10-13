@@ -1,0 +1,35 @@
+import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/nextjs";
+import Link from "next/link";
+
+function Navbar() {
+  return (
+    <div>
+      <div className="flex items-center py-3 px-4 justify-between">
+        <div>
+          <h1 className="text-3xl font-semibold">BabelForge</h1>
+        </div>
+        <div>
+          <ul className="flex gap-5">
+            <li>
+              <Link href="/">Home</Link>
+            </li>
+            <li>
+              <Link href="/dashboard">Dashboard</Link>
+            </li>
+            <li>
+              <Link href="/contact">Contact</Link>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <div className="relative flex gap-3">
+            
+           
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default Navbar;
