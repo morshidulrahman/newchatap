@@ -22,10 +22,26 @@ function Navbar() {
           </ul>
         </div>
         <div>
-          <div className="relative flex gap-3">
-            
-           
-          </div>
+          <SignedIn>
+            <div className="flex items-center gap-4">
+              <UserButton>
+                <UserButton.MenuItems>
+                  <UserButton.Action label="signOut" />
+                  <UserButton.Link
+                    label="Dashboard"
+                    labelIcon={<LayoutDashboard size={16} />}
+                    href="/dashboard"
+                  />
+                  <UserButton.Action label="manageAccount" />
+                </UserButton.MenuItems>
+              </UserButton>
+            </div>
+          </SignedIn>
+          <SignedOut>
+            <SignInButton>
+              <button className="capitalize text-blue-600">login</button>
+            </SignInButton>
+          </SignedOut>
         </div>
       </div>
     </div>
