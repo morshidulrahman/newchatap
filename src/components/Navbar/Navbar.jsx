@@ -27,11 +27,7 @@ function Navbar() {
               <UserButton>
                 <UserButton.MenuItems>
                   <UserButton.Action label="signOut" />
-                  <UserButton.Link
-                    label="Dashboard"
-                    labelIcon={<LayoutDashboard size={16} />}
-                    href="/dashboard"
-                  />
+                  <UserButton.Link label="Dashboard" href="/dashboard" />
                   <UserButton.Action label="manageAccount" />
                 </UserButton.MenuItems>
               </UserButton>
